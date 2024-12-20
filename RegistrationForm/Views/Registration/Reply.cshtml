@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Reply Page";
+    @model User;
+}
+
+<div style="border-color: @(Model.Participate ? "gray" : "red")" class="textContainer">
+
+    <h4>New year Party Registraion</h4>
+    <strong>Hey, @Model.Name @Model.Lastname</strong>
+    <i>
+        Thanks for your reply!
+    </i>
+    <a asp-action="Index" asp-controller="User" >Watch list</a>
+
+    @if(!Model.Participate)
+    {
+        <a asp-action="Index" asp-controller="Home">Go to home</a>
+    }
+</div>

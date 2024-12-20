@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Users Page";
+    @model List<User>;
+}
+
+
+<ul class="user_list">
+    @foreach(User user in @Model)
+    {
+        <li>
+            <p>Fullname: @user.Name</p>
+            <p>Lastname: @user.Lastname</p>
+            <p>Mail: @user.Email</p>
+            <p>Participate: @(@user.Participate ? "Participate" : "Non Participate")</p>
+        </li>
+    }
+</ul>
+<a asp-action="Index" asp-controller="Home">Go to home</a>
