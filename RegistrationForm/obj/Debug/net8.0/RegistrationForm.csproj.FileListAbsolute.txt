@@ -28,3 +28,4 @@ C:\Users\TechEvo Computers\source\repos\RegistrationForm\RegistrationForm\obj\De
 C:\Users\TechEvo Computers\source\repos\RegistrationForm\RegistrationForm\obj\Debug\net8.0\RegistrationForm.pdb
 C:\Users\TechEvo Computers\source\repos\RegistrationForm\RegistrationForm\obj\Debug\net8.0\RegistrationForm.genruntimeconfig.cache
 C:\Users\TechEvo Computers\source\repos\RegistrationForm\RegistrationForm\obj\Debug\net8.0\ref\RegistrationForm.dll
+C:\Users\TechEvo Computers\source\repos\RegistrationForm\RegistrationForm\obj\Debug\net8.0\RegistrationForm.sourcelink.json

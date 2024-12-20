@@ -11,7 +11,7 @@
             <p>Fullname: @user.Name</p>
             <p>Lastname: @user.Lastname</p>
             <p>Mail: @user.Email</p>
-            <p>Participate: @(@user.Participate ? "Participate" : "Non Participate")</p>
+            <p>Participate: @(@user.Participate.GetValueOrDefault() ? "Participate" : "Non Participate")</p>
         </li>
     }
 </ul>

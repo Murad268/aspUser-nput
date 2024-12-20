@@ -23,7 +23,7 @@ namespace RegistrationForm.Controllers
 
             }
 
-            return View(user);
+            return View();
 
         }
 

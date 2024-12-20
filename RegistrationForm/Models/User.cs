@@ -16,7 +16,7 @@ namespace RegistrationForm.Models
         [Required(ErrorMessage = "E-poçt ünvanı daxil edilməlidir.")]
         [EmailAddress(ErrorMessage = "Düzgün e-poçt ünvanı daxil edin")]
         public string Email { get; set; }
-        [Required(ErrorMessage = "Zəhmət olmasa iştirak etməyi təsdiq edin")]
-        public bool Participate { get; set; }
+        [Required(ErrorMessage = "Zəhmət olmasa iştirak edib etməməyi təsdiq edin")]
+        public bool? Participate { get; set; }
     }
 }

@@ -4,17 +4,17 @@
     @model User;
 }
 
-<div style="border-color: @(Model.Participate ? "gray" : "red")" class="textContainer">
+<div style="border-color: @(Model.Participate.HasValue && Model.Participate.Value ? "gray" : "red")" class="textContainer">
 
-    <h4>New year Party Registraion</h4>
+    <h4>New Year Party Registration</h4>
     <strong>Hey, @Model.Name @Model.Lastname</strong>
     <i>
         Thanks for your reply!
     </i>
-    <a asp-action="Index" asp-controller="User" >Watch list</a>
+    <a asp-action="Index" asp-controller="User">Watch list</a>
 
-    @if(!Model.Participate)
+    @if (!Model.Participate.GetValueOrDefault())
     {
-        <a asp-action="Index" asp-controller="Home">Go to home</a>
+        <a asp-action="Index" style="background: red" asp-controller="Home">Go to home</a>
     }
 </div>
